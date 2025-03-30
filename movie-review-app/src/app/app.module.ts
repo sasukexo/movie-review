@@ -10,17 +10,21 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactItemComponent } from './pages/contact/contact-item/contact-item.component';
-import { ServiceItemComponent } from './pages/home/service-item/service-item.component';
-import { ServiceDetailsComponent } from './pages/home/service-details/service-details.component';
+
 import { EnquiryFormComponent } from './pages/home/enquiry-form/enquiry-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EnquiriesComponent } from './pages/enquiries/enquiries.component';
 import { LoginComponent } from './common/login/login.component';
-import { EnquiryResponseComponent } from './pages/enquiries/enquiry-response/enquiry-response.component';
+
 import { FilterservicePipe } from './pipes/filterservice.pipe';
 import { HighlightPipe } from './pipes/highlight.pipe';
 import { MovieFormComponent } from './component/movie-form/movie-form.component';
 import { MovieListComponent } from './component/movie-list/movie-list.component';
+import { AddMovieComponent } from './component/add-movie/add-movie.component';
+import { CartComponent } from './component/cart/cart.component';
+import { PurchaseComponent } from './component/purchase/purchase.component';
+import { BookedMoviesComponent } from './component/booked-movies/booked-movies.component';
+import { PurchaseHistoryComponent } from './component/purchase-history/purchase-history.component';
 
 
 @NgModule({
@@ -32,16 +36,20 @@ import { MovieListComponent } from './component/movie-list/movie-list.component'
     ContactComponent,
     ProjectsComponent,
     ContactItemComponent,
-    ServiceItemComponent,
-    ServiceDetailsComponent,
+    
     EnquiryFormComponent,
     EnquiriesComponent,
     LoginComponent,
-    EnquiryResponseComponent,
+  
     FilterservicePipe,
     HighlightPipe,
     MovieFormComponent,
-    MovieListComponent
+    MovieListComponent,
+    AddMovieComponent,
+    CartComponent,
+    PurchaseComponent,
+    BookedMoviesComponent,
+    PurchaseHistoryComponent
   ],
   imports: [
     BrowserModule,

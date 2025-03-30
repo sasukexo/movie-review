@@ -1,7 +1,10 @@
 <div class="container">
-  <h3 class="text-center">Movie List</h3>
+  <h3 class="text-center">Booked Movies</h3>
+  <div *ngIf="bookedMovies.length === 0" class="text-center">
+    <p>No movies booked yet.</p>
+  </div>
   <div class="row">
-    <div *ngFor="let movie of movies" class="col-md-4 col-sm-6 col-12 mb-4">
+    <div *ngFor="let movie of bookedMovies" class="col-md-4 col-sm-6 col-12 mb-4">
       <div class="card h-100 shadow">
         <img [src]="movie.image" class="card-img-top" alt="Movie Image">
         <div class="card-body">
@@ -9,10 +12,6 @@
           <p class="card-text"><strong>Genre:</strong> {{ movie.genre }}</p>
           <p class="card-text"><strong>Director:</strong> {{ movie.director }}</p>
           <p class="card-text"><strong>IMDB Rating:</strong> ⭐ {{ movie.imdb }}</p>
-          <p class="card-text"><strong>Price:</strong> ${{ movie.price }}</p>
-          <button (click)="addToCart(movie)">Add to Cart</button>
-
-
         </div>
       </div>
     </div>
